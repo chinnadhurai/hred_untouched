@@ -1,11 +1,3 @@
-### Description
-This repository hosts the Hierarchical Encoder Decoder RNN model (HRED) and 
-the Latent Variable Hierarchical Recurrent Encoder-Decoder RNN model (VHRED) for generative dialog modeling as described by Serban et al. (2016a) and Serban et al. (2016c).
-
-
-
-### Truncated BPTT
-Both models are implemented using Truncated Backpropagation Through Time (Truncated BPTT).
 The truncated computation is carried out by splitting each document (dialogue) into shorter sequences (e.g. 80 tokens) and computing gradients for each sequence separately, such that the hidden state of the RNNs on each subsequence are initialized from the preceding sequences (i.e. the hidden states have been forward propagated through the previous states).
 
 
@@ -104,3 +96,5 @@ The MovieTriples script is also available for research purposes only by contacti
     Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models. Iulian V. Serban, Alessandro Sordoni, Yoshua Bengio, Aaron Courville, Joelle Pineau. 2016c. AAAI. http://arxiv.org/abs/1507.04808.
 
     The Ubuntu Dialogue Corpus: A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems. Ryan Lowe, Nissan Pow, Iulian Serban, Joelle Pineau. 2015. SIGDIAL. http://arxiv.org/abs/1506.08909.
+=======
+# hred_untouched
